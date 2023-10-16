@@ -1,0 +1,55 @@
+<html> 
+    <head>  
+        <title>AMBULANCE ONLINE BOOKING</title>   
+        <link rel = "stylesheet" type = "text/css" href = "style.css">   
+    </head> 
+        <div id = "frm"> 
+            <h1>ST JHONES AMBULANCE ONLINE BOOKING SYSTEM <br></h1> 
+            <h2>LOGIN</h2> 
+            <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+                <p>  
+                    <label> UserName: </label>  
+                    <input type = "text" id ="user" name  = "user" />  
+                </p>  
+                <p>  
+                    <label> Email: </label>  
+                    <input type = "text" id ="user" name  = "user" />
+                </p>
+                 <p>
+                    <label> Password: </label>  
+                    <input type = "password" id ="pass" name  = "pass" />  
+                </p>  
+                <p>     
+                    <input type =  "submit" id = "btn" value = "Login" />  
+                </p>  
+            </form>  REGISTER
+        </div>  
+          
+        <script>  
+                function validation()  
+                {  
+                    var id=document.f1.user.value;  
+                    var ps=document.f1.pass.value; 
+                    var em=document.f1.email.value; 
+                    if(id.length=="" && ps.length=="") {  
+                        alert("User Name Email and Password fields are empty");  
+                        return false;  
+                    }  
+                    else  
+                    {  
+                        if(id.length=="") {  
+                            alert("User Name is empty");  
+                            return false;  
+                        }   
+                        if (ps.length=="") {  
+                        alert("Password field is empty");  
+                        return false;  
+                        }  
+                    }                             
+                }  
+            </script>  
+    </body>     
+    </html>  
+    
+    <?php
+    ?>
